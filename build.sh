@@ -18,13 +18,10 @@ cd ..
 mkdir build
 cd build
 
-if [[ "$BUILD_PYTHON" == "python3" ]]; then
-  BUILD_PYTHON3="ON"
-  pip3 install wheel
-else
-  BUILD_PYTHON3="OFF"
-  pip install wheel
-fi
+
+BUILD_PYTHON3="ON"
+pip3 install wheel
+
 
 if [[ "$OSTYPE" == "linux-gnu" || "$OSTYPE" == "linux" ]]; then
     cmake -DBUILD_PYTHON3=$BUILD_PYTHON3 \
