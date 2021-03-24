@@ -21,7 +21,7 @@ set(pyDBOW3_VERSION_ID ${pyDBOW3_MAJOR_VERSION}${pyDBOW3_MINOR_VERSION}${pyDBOW3
 
 # Building options
 #-------------------------------------------------------------------------------
-option(BUILD_PYTHON3 "Build DBow3 Python3 binding instead of default Python2." OFF)
+option(BUILD_PYTHON3 "Build DBow3 Python3 binding instead of default Python2." ON)
 OPTION(BUILD_STATICALLY_LINKED 	"Set to OFF to link with opencv and DBoW3 dynamically" ON)
 
 SET(Boost_DEBUG OFF)
